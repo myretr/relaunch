@@ -1,0 +1,300 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="vv6u1jnsHgjwogyuOWKjQbay6RoOnru1oGuQCeZf">
+
+    <title>TRANSRETTA | Multiple Order</title>
+
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/dfa2d8d82a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- Scripts -->
+        <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-5cbddb92.css" /><link rel="modulepreload" href="http://127.0.0.1:8000/build/assets/app-92006bb3.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-5cbddb92.css" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-92006bb3.js"></script></head>
+<body class="">
+    <div id="app">
+        <main>
+            <nav id="sidebar" class="p-lg-1 align-content-center min-vh-100 mh-100 ">
+  <div class="sidebar-header">
+      <img class="full-logo" src="http://127.0.0.1:8000/images/trs_asset_02.png" style="max-width: 200px;">
+      <img class="icon-logo" src="http://127.0.0.1:8000/images/trs_asset_03.png">
+  </div>
+
+  <ul class="list-unstyled border-0 components">
+      <li class="  pb-1">
+          <a  class="btn-link rounded" href="/dashboard">
+            <i class="material-icons">grid_view</i>
+            <span>Overview</span>
+          </a>
+      </li>
+      <li class="  pb-1">
+          <a class="btn-link rounded" href="/new-order">
+            <i class="material-icons-outlined">
+              drive_file_rename_outline
+            </i>
+            <span>Create Order</span>
+          </a>
+      </li>
+      <li  class="active pb-1">
+          <a class="btn-link rounded" href="/order">
+            <i class="material-icons-outlined">
+              shopping_cart
+            </i>
+            <span>Orders</span>
+          </a>
+      </li>
+      <li class="  pb-1">
+          <a class="btn-link rounded" href="/shop">
+            <i class="material-icons-outlined">
+              store
+            </i>
+              <span>Shop</span>
+          </a>
+      </li>
+      <li  class="  pb-1">
+          <a class="btn-link rounded" href="/delivery">
+            <i class="material-icons-outlined">
+              local_shipping
+            </i>
+              <Span>Monitor Delivery</Span>
+          </a>
+      </li>
+      <li  class=" pb-1">
+          <a class="btn-link rounded" href="/settings">
+            <i class="material-icons-outlined">
+              settings
+            </i>
+              <span>Settings</span>
+          </a>
+      </li>
+      <li  class=" pb-1">
+          <a class="btn-link rounded" href="/account">
+            <i class="material-icons-outlined">
+              person_outline
+            </i>
+              <span>Accounts</span>
+          </a>
+      </li>
+      <div class="d-flex py-3 justify-content-end">
+        <button type="button" id="sidebarCollapse" class="btn btn-outline-primary white-text-hover d-none d-lg-block">
+          <i id="backicon" class="material-icons-outlined" style="rotate: 90deg;">
+            unfold_less_double 
+          </i>
+        </button>
+      </div>
+  </ul>
+</nav><div id="content">
+ <div class="row  m-auto p-3">
+  <div class="col-md-12 p-0">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-6">
+                  <a href="http://127.0.0.1:8000/order" id="" class="btn-link text-decoration-none border-0" name="back" role="button">
+        <i class="material-icons-outlined">
+        keyboard_backspace</i> Back To Order details
+    </a>              </div>
+      <div class="align-self-end col-lg-2 col-md-4 col-6">
+          <div class="dropdown btn bg-transparent p-0 border-0">
+              <a href="#" class="border border-0 text-center btn btn-link d-flex text-body align-items-center link-dark text-decoration-none" id="profile_toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="http://127.0.0.1:8000/images/trs_asset_04.png" alt="" width="50" height="50" class="border rounded-circle me-1 me-lg-2">
+                <strong>Profile <i class="material-icons-outlined">arrow_drop_down</i></strong>
+              </a>
+              <ul class="dropdown-menu text-small shadow" aria-labelledby="profile_toggle" style="">
+                <li><a class="dropdown-item" href="/settings">Settings</a></li>
+                <li><a class="dropdown-item" href="/account">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>    <div class="row m-auto">
+        <div class="col-lg-12 pt-5 p-lg-4">
+            <div class="row align-items-center">
+                <div class="col-7">
+                    <h3>Order Id: T44908908789LP</h3>
+                </div>
+                <div class="col-lg-5 col-md-6 mt-4 mt-md-0 text-md-end">
+                    <button name="Order_Details" id="Order_Details" class="btn btn-outline-primary me-2 white-text-hover" onclick="window.print();" role="button">
+                        <i class="material-icons-outlined">
+                            receipt_long
+                        </i>
+                            Print Invoice
+                    </button>
+                    <a name="Order_Details" id="Order_Details" class="btn btn-primary white-text" href="#" role="button">
+                        <i class="material-icons-outlined">
+                            gps_fixed
+                        </i>
+                        Track Order
+                    </a>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <div class=" bg-white p-3 p-lg-5 rounded">
+                        <!-- Product Information tabs -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item  me-2" role="presentation">
+                            <button class="text-muted nav-link active tabaction px-0" id="product-info" data-bs-toggle="tab" data-bs-target="#product-info" type="button" role="tab" aria-controls="product-info" aria-selected="true">Product Details</button>
+                            </li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="product-info" role="tabpanel" aria-labelledby="product-info-tab" tabindex="0">
+                                <div class="col-12 mt-3">
+                                    <a href="/order/details/T44908908789LP-myriakat" class="text-dark text-decoration-none">
+                                        <div class="row pt-0 pb-3  align-items-top">
+                                            <div class="col-lg-2 col-md-3 col-6 pb-2 py-md-0">
+                                                <img src="http://127.0.0.1:8000/images/trs_asset_09.png" alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-lg-5">
+                                                <p class="text-primary fw-semibold mb-0"> Store: Adunni’s Closet</p>
+                                                <p class="fs-4 fw-semibold mb-0" >Miyaki Luxury Gown</p>
+                                                <p class="mb-0">Color: Light Blue &nbsp &nbsp &nbsp Size: 8 </p>
+                                                <p >Sizes: XS, S, L, XL, XXL, XXXL</p>
+                                                <p class="text-success fs-5 fw-semibold" >₦ 25,000.00</p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 pb-2 py-md-0">
+                                                <p class="mb-0">Quantity Log</p>
+                                                <p class="mb-0">Total: 24</p>
+                                                <p class="mb-0">Available: 18</p>
+                                                <p class="mb-0">Sold: 18</p>
+                                            </div>
+                                            <div class="col-lg-2 col-md-3 col-6 pb-2 py-md-0">
+                                                <img src="http://127.0.0.1:8000/images/trs_asset_12.png" alt="" class="img-fluid rounded border">
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Buyers Information tabs -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item  me-2" role="presentation">
+                            <button class="text-muted nav-link active tabaction px-0" id="buyers-info" data-bs-toggle="tab" data-bs-target="#buyers-info" type="button" role="tab" aria-controls="buyers-info" aria-selected="true">Buyers Information</button>
+                            </li>
+                        </ul>
+                        
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="buyers-info" role="tabpanel" aria-labelledby="buyers-info-tab" tabindex="0">
+                                
+                                <div class="row align-items-top border-bottom pt-3">
+                                    <div class="col-lg-4">
+                                        <div class="row m-0">
+                                            <div class="col-3 col-md-2 col-lg-3 ps-0">
+                                                <div class="border border-1 rounded-circle">
+                                                    <img src="http://127.0.0.1:8000/images/trs_asset_08.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 ps-0">
+                                                <p class="mb-1 grey-text">Contact Information</p>
+                                                <p class="mb-1"><span class="opacity-50">Name:</span> Ibrahim Abubakar</p>
+                                                <p class="mb-1"><span class="opacity-50">Phone:</span> 0700-777-8888</p>
+                                                <p><span class="opacity-50">Email:</span> info@transretta.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-5">
+                                        <p class="grey-text mb-1">Order Details:</p>
+                                        <p class="mb-1"><span class="opacity-50">Quantity: </span>3</p>
+                                        <p class="mb-1"><span class="opacity-50">Size:</span> XL</p>
+                                        <p class="mb-1"><span class="opacity-50">Total:</span> ₦ 75000</p>
+                                        <p><span class="opacity-50">Order Date:</span> 19th October, 2022</p>
+                                    </div>
+                                    <div class="col-lg-5 col-6">
+                                        <p class="grey-text mb-1">Delivery Details:</p>
+                                        <p class="mb-1"><span class="opacity-50">Receiver’s address:</span> No. 42, Biisi Ali street, Epe- Lagos state</p>
+                                        <p  class="mb-1"><span class="opacity-50">Delivery Proxy:</span> Transretta</p>
+                                        <p><span class="opacity-50">Estimated Delivery:</span> 19th October, 2022</p>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="row align-items-top border-bottom pt-3">
+                                    <div class="col-lg-4">
+                                        <div class="row m-0">
+                                            <div class="col-3 col-md-2 col-lg-3 ps-0">
+                                                <div class="border border-1 rounded-circle">
+                                                    <img src="http://127.0.0.1:8000/images/trs_asset_04.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 ps-0">
+                                                <p class="mb-1 grey-text">Contact Information</p>
+                                                <p class="mb-1"><span class="opacity-50">Name:</span> Jane Doe</p>
+                                                <p class="mb-1"><span class="opacity-50">Phone:</span> 0700-777-8888</p>
+                                                <p><span class="opacity-50">Email:</span> info@transretta.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-5">
+                                        <p class="grey-text mb-1">Order Details:</p>
+                                        <p class="mb-1"><span class="opacity-50">Quantity: </span>3</p>
+                                        <p class="mb-1"><span class="opacity-50">Size:</span> XL</p>
+                                        <p class="mb-1"><span class="opacity-50">Total:</span> ₦ 75000</p>
+                                        <p><span class="opacity-50">Order Date:</span> 19th October, 2022</p>
+                                    </div>
+                                    <div class="col-lg-5 col-6">
+                                        <p class="grey-text mb-1">Delivery Details:</p>
+                                        <p class="mb-1"><span class="opacity-50">Receiver’s address:</span> No. 42, Biisi Ali street, Epe- Lagos state</p>
+                                        <p  class="mb-1"><span class="opacity-50">Delivery Proxy:</span> Transretta</p>
+                                        <p><span class="opacity-50">Estimated Delivery:</span> 19th October, 2022</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </main>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $x = 0;
+        $('#sidebarCollapse').on('click', function () {
+            if ($x == 0) {
+                $('#backicon').text('unfold_more_double');
+                $x = 1;
+            }else{
+                $('#backicon').text('unfold_less_double')
+                $x = 0;
+            }
+            $('#sidebar').toggleClass('active');
+            $('#content').toggleClass('active');
+        });
+
+       $('#btn1').click(function () {
+          $('input').attr('disabled', 'disabled');
+       });
+       
+       $('#edit_profile').click(function () {
+          $('#p_details input').removeAttr('disabled');
+          $('#p_details select').removeAttr('disabled');
+          $('#edit_profile').attr('disabled', 'disabled');
+          $('#updateprofile').removeAttr('disabled');
+       });
+
+       $('#updateprofile').click(function () {
+          $('#p_details input').attr('disabled', 'disabled');
+          $('#p_details select').attr('disabled', 'disabled');
+          $('#edit_profile').removeAttr('disabled');
+          $('#updateprofile').attr('disabled', 'disabled');
+       });
+    });
+    
+</script>
+</body>
+</html>
