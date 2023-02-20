@@ -1,0 +1,245 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="bQxYzj72tAVzJxnVwA0gFBhmjVtRz3N9m2LqKr5b">
+
+    <title>TRANSRETTA | Shipping Information</title>
+
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/dfa2d8d82a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- Scripts -->
+        <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-24deb6b0.css" /><link rel="modulepreload" href="http://127.0.0.1:8000/build/assets/app-92006bb3.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-24deb6b0.css" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-92006bb3.js"></script></head>
+<body class="" style="background-color: #F7F9FB">
+    <div id="app">
+        <main>
+            <nav class="navbar sticky-top" style="background-color: #F7F9FB">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="/">
+          <img class="full-logo img-fluid d-none d-md-block" src="http://127.0.0.1:8000/images/trs_asset_02.png" style="max-width: 200px;">
+          <img class="icon-logo d-md-none" src="http://127.0.0.1:8000/images/trs_asset_03.png"  style="max-width: 30px;">
+        </a>
+        <div>
+            <button class="btn btn-primary-outline border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="material-icons-outlined">
+                    shopping_cart
+                </i><sup id="cartCount" class="rounded-circle d-none" style="background: #f59137; color:white; padding: 0 3px;font-size: 10px; margin-left: -6px; vertical-align: super;"></sup>
+            </button>
+                        <a class="btn btn-primary text-primary bg-primary bg-opacity-25" href="/login" >Login <i class="material-icons-outlined">
+                login
+            </i></a>
+                    </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+        <p class="offcanvas-title fw-bolder fs-5"> Cart</p>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li>
+                <div class="row m-auto align-items-center">
+                    <div class="col-md-4 col-3 px-0">
+                        <div class="bg-cover rounded-2" style="background: url(http://127.0.0.1:8000/images/trs_asset_09.png); min-height:100px"></div>
+                    </div>
+                    <div class="col-md-5  col-6">
+                        <p class="mb-0">Miyaki Luxury Gown</p>
+                        <div class="input-group input-group-sm my-1">
+                            <span class="input-group-text">Quantity</span>
+                            <input type="number" value="1" class="form-control text-center" aria-label="quantity">
+                          </div>
+                        <button class="btn btn-link p-0 m-0 text-decoration-none">Remove</button>
+                    </div>
+                    <div class="col-md-3 col-3">
+                        <p class="text-primary">₦35,000.00</p>
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="offcanvas-footer bg-primary bg-opacity-25">
+            <div class="d-grid gap-2">
+                <a class="btn btn-primary  btn-lg rounded-0 text-white" href="/checkout" type="button">Check Out</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav><div class="container-fluid py-3">
+    <div class="row m-auto mt-4  align-items-center">
+        <div class="col-md-3 col-lg-2 text-center d-none d-md-block">
+            <img src="http://127.0.0.1:8000/images/shipping_page.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-9 col-lg-9 bg-white">
+            <div class="row m-auto align-items-center">
+                <div class="row m-auto pt-4 mb-3 align-items-top">
+                    <div class="col-md-6">
+                        <p class="fs-4 rounded mb-0 py-2">Shipping Information</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="py-3">
+                                    <label for="first_name" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">First Name</span>
+                                    </label>
+                                    <input id="first_name" type="text" class="form-control in_pd " name="f_name" required="" autocomplete="first_name" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="py-3">
+                                    <label for="last_name" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">Last name</span>
+                                    </label>
+                                    <input id="last_name" type="text" class="form-control in_pd " name="l_name" required="" autocomplete="l_name" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="py-3">
+                                    <label for="email" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">Email Address</span>
+                                    </label>
+                                    <input id="email" type="email" class="form-control in_pd " name="email" required="" autocomplete="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="py-3">
+                                    <label for="phone" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">Phone Number</span>
+                                    </label>
+                                    <input id="phone" type="tel" class="form-control in_pd " name="phone" required="" autocomplete="phone" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="py-3">
+                                    <label for="address" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">Address</span>
+                                    </label>
+                                    <input id="address" type="text" class="form-control in_pd " name="address" required="" autocomplete="address" placeholder="Address">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="py-3">
+                                    <label for="city" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">City</span>
+                                    </label>
+                                    <input id="city" type="text" class="form-control in_pd " name="city" required="" autocomplete="city" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="py-3">
+                                    <label for="postal_code" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">Postal code</span>
+                                    </label>
+                                    <input id="postal_code" type="text" class="form-control in_pd " name="postal_code" required="" autocomplete="postal_code" placeholder="Postal code">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="py-3">
+                                    <label for="province" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">Province</span>
+                                    </label>
+                                    <input id="province" type="text" class="form-control in_pd " name="province" required="" autocomplete="Province" placeholder="Province">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="py-3">
+                                    <label for="country" class="ms-2 position-absolute" style="margin-top: -10px !important">
+                                        <span class="h6 small text-muted px-1" style="background:#ffff">Country</span>
+                                    </label>
+                                    <input id="country" type="text" class="form-control in_pd " name="country" required="" autocomplete="country" placeholder="Country">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <div class="d-none d-md-block text-center">
+                            <div class="vr" style="min-height: 500px;"></div>
+                        </div>
+                        <hr class="d-block d-md-none">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="fs-4 rounded mb-0 ps-0 p-2">Shipping Method</p>
+                        <div class="border-bottom pb-3">
+                            <div class="form-check checkbox-lg mb-3">
+                                <input checked type="radio" onchange="selectShipping(0)" class="form-check-input" id="transretta_delivery" name="Shipping_method" value="Transretta Shipping">
+                                <label for="transretta_delivery" class="form-label m-0 ms-2">Transretta Shipping (GIG Motors - 24 hours)
+                                </label>
+                            </div>
+                            <div class="form-check checkbox-lg mb-3">
+                                <input type="radio" onchange="selectShipping(1)" class="form-check-input" id="seller_delivery" name="Shipping_method" value="Seller Shipping">
+                                <label for="seller_delivery" class="form-label m-0 ms-2">Adunni’s Closet Shipping (Public Transport)
+                                </label>
+                            </div>
+                            <div class="form-check checkbox-lg mb-3">
+                                <input type="radio" onchange="selectShipping(2)" class="form-check-input" id="pick_up" name="Shipping_method" value="Pick Up">
+                                <label for="pick_up" class="form-label m-0 ms-2">Pickup from store
+                                </label>
+                            </div>
+                        </div>
+                        <div class="py-3 border-bottom">
+                            <p class="mb-0"> 
+                                <span class="fw-bolder"> Shipping Method </span>
+                                <span class="text-end float-end" id="shippingChoice"></span>
+                            </p>
+                        </div>
+                        <div class="py-3 border-bottom">
+                            <p class="mb-0"> 
+                                <span class="fw-bolder"> Cost </span>
+                                <span class="text-end float-end"> ₦3,000.00</span>
+                            </p>
+                        </div>
+                        <div class="py-3">
+                            <p class=""> 
+                                <span class="fw-bolder"> Promo code ? </span>
+                            </p>
+                            <div class="input-group  input-group-lg mb-3">
+                                <input type="text" class="form-control" placeholder="Promo code.." aria-label="promo code" aria-describedby="basic-addon2">
+                                <button class="btn btn-primary white-text">Activate </button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-auto mt-3 mb-3 border-top pt-3 align-items-center">
+                    <div class="col-md-12 text-md-end text-lg-start col-lg-3">
+                        <p class="fs-5 mb-md-0">
+                            Total amount : <span class="text-primary">₦70,000.00</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <p class="mb-md-0 grey-text">
+                            Taxes and shipping costs are calculated at checkout
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end col-md-6">
+                        <a type="button" class="btn btn-outline-primary white-text-hover" href="/checkout" >Back to Cart</a>
+                        <a type="button" class="btn btn-primary white-text" href="/order-summary" >Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+const selectedShipping = document.getElementsByName("Shipping_method");
+const shipping = document.getElementById("shippingChoice")
+shipping.innerHTML = selectedShipping[0].value;
+const selectShipping = (x) =>{
+    shipping.innerHTML = selectedShipping[x].value;
+}
+
+</script>
+        </main>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="bQxYzj72tAVzJxnVwA0gFBhmjVtRz3N9m2LqKr5b">
+
+    <title>TRANSRETTA | Home Adunni’s Closet</title>
+
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/dfa2d8d82a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- Scripts -->
+        <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-24deb6b0.css" /><link rel="modulepreload" href="http://127.0.0.1:8000/build/assets/app-92006bb3.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-24deb6b0.css" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-92006bb3.js"></script></head>
+<body class="" style="background-color: #F7F9FB">
+    <div id="app">
+        <main>
+            <nav class="navbar sticky-top" style="background-color: #F7F9FB">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="/">
+          <img class="full-logo img-fluid d-none d-md-block" src="http://127.0.0.1:8000/images/trs_asset_02.png" style="max-width: 200px;">
+          <img class="icon-logo d-md-none" src="http://127.0.0.1:8000/images/trs_asset_03.png"  style="max-width: 30px;">
+        </a>
+        <div>
+            <button class="btn btn-primary-outline border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="material-icons-outlined">
+                    shopping_cart
+                </i><sup id="cartCount" class="rounded-circle d-none" style="background: #f59137; color:white; padding: 0 3px;font-size: 10px; margin-left: -6px; vertical-align: super;"></sup>
+            </button>
+                        <a class="btn btn-primary text-primary bg-primary bg-opacity-25" href="/login" >Login <i class="material-icons-outlined">
+                login
+            </i></a>
+                    </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+        <p class="offcanvas-title fw-bolder fs-5"> Cart</p>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li>
+                <div class="row m-auto align-items-center">
+                    <div class="col-md-4 col-3 px-0">
+                        <div class="bg-cover rounded-2" style="background: url(http://127.0.0.1:8000/images/trs_asset_09.png); min-height:100px"></div>
+                    </div>
+                    <div class="col-md-5  col-6">
+                        <p class="mb-0">Miyaki Luxury Gown</p>
+                        <div class="input-group input-group-sm my-1">
+                            <span class="input-group-text">Quantity</span>
+                            <input type="number" value="1" class="form-control text-center" aria-label="quantity">
+                          </div>
+                        <button class="btn btn-link p-0 m-0 text-decoration-none">Remove</button>
+                    </div>
+                    <div class="col-md-3 col-3">
+                        <p class="text-primary">₦35,000.00</p>
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="offcanvas-footer bg-primary bg-opacity-25">
+            <div class="d-grid gap-2">
+                <a class="btn btn-primary  btn-lg rounded-0 text-white" href="/checkout" type="button">Check Out</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav><div class="container-fluid py-3">
+    <div class="row">
+        <div class="col-md-3 col-lg-2">
+    <div class="row m-auto">
+        <div class="col-md-12 p-0 p-lg-1">
+                                    <p class=" fs-4 d-none d-md-block mb-0">Filter</p>
+            <p class="mb-0 fw-bold fs-5 p-2 d-md-none bg-primary bg-opacity-25 bg-primary" data-bs-toggle="collapse" href="#category" role="button" aria-expanded="false" aria-controls="category" >Filter <i class="material-icons-outlined">
+                expand_more
+            </i></p>
+            <div class="collapse  dont-collapse-sm  bg-primary-sm p-2 rounded-bottom bg-opacity-25" id="category">
+                <p class="mb-0 fw-bold fs-5" >Category </p>
+                    <div class="border-0 btn-opacity checkbox-lg p-1">
+                        <label class="form-label m-0  btn-primary text-start" for="Shoes" style="min-width:100%">Shoes
+                            <input type="checkbox" class="form-check-input border-primary" name="category" id="Shoes" style="float:right;border-radius:3px"></label>
+                    </div>
+                    <div class="border-0 btn-opacity checkbox-lg p-1">
+                        <label class="form-label m-0  btn-primary text-start" for="Dresses" style="min-width:100%">Dresses
+                            <input type="checkbox" class="form-check-input border-primary" name="category" id="Dresses" style="float:right;border-radius:3px"></label>
+                    </div>
+                    <div class="border-0 btn-opacity checkbox-lg p-1">
+                        <label class="form-label m-0  btn-primary text-start" for="Tops" style="min-width:100%">Tops
+                            <input type="checkbox" class="form-check-input border-primary" name="category" id="Tops" style="float:right;border-radius:3px"></label>
+                    </div>
+                    <div class="border-0 btn-opacity checkbox-lg p-1">
+                        <label class="form-label m-0  btn-primary text-start" for="Blouse" style="min-width:100%">Blouse
+                            <input type="checkbox" class="form-check-input border-primary" name="category" id="Blouse" style="float:right;border-radius:3px"></label>
+                    </div>
+                    <div class="border-0 btn-opacity checkbox-lg p-1">
+                        <label class="form-label m-0  btn-primary text-start" for="Bags" style="min-width:100%">Bags
+                            <input type="checkbox" class="form-check-input border-primary" name="category" id="Bags" style="float:right;border-radius:3px"></label>
+                    </div>
+                    <div class="border-0 btn-opacity checkbox-lg p-1">
+                        <label class="form-label m-0  btn-primary text-start" for="Trouser" style="min-width:100%">Trouser
+                            <input type="checkbox" class="form-check-input border-primary" name="category" id="Trouser" style="float:right;border-radius:3px"></label>
+                    </div>
+                <fieldset class="mt-1 mb-0">
+                    <legend class="fs-5 mt-2">Price</legend>
+                    
+                <div class="input-group mb-3">
+                    <label for="minprice" class="ms-5 position-absolute" style="margin-top: -10px !important;z-index: 10;">
+                        <span class="h6 small text-muted px-1" style="background:#F7F9FB">Min</span>
+                    </label>
+                    <span class="input-group-text" id="basic-addon1">₦</span>
+                    <input type="number" id="minprice" name="minprice" min="1000" class="form-control" placeholder="1000" aria-label="min" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group  mb-3">
+                    <label for="maxprice" class="ms-5 position-absolute" style="margin-top: -10px !important;z-index: 10;">
+                        <span class="h6 small text-muted px-1" style="background:#F7F9FB">Max</span>
+                    </label>
+                    <span class="input-group-text" id="basic-addon1">₦</span>
+                    <input id="maxprice" name="maxprice" type="number" max="50000" class="form-control" placeholder="50000" aria-label="min" aria-describedby="basic-addon1">
+                </div>
+                </fieldset>
+                <p id="price" class="fs-5 text-center"></p>
+                <p class="mt-4 mb-0 fs-5 fw-bold form-label">Rating</p>
+                <p class="mb-1 mx-2">
+                    <i class="material-icons-outlined" onmouseout="rateOff()" onclick="rateSelect(1)" onmouseover="rate(1)" id="star-1" style="margin-left: -7px !important">
+                        star_outline
+                    </i>
+                    <i class="material-icons-outlined" onmouseout="rateOff()" onclick="rateSelect(2)"  onmouseover="rate(2)" id="star-2" style="margin-left: -7px !important">
+                        star_outline
+                    </i>
+                    <i class="material-icons-outlined" onmouseout="rateOff()" onclick="rateSelect(3)"  onmouseover="rate(3)" id="star-3" style="margin-left: -7px !important">
+                        star_outline
+                    </i>
+                    <i class="material-icons-outlined" onmouseout="rateOff()" onclick="rateSelect(4)" onmouseover="rate(4)" id="star-4" style="margin-left: -7px !important">
+                        star_outline
+                    </i>
+                    <i class="material-icons-outlined" onmouseout="rateOff()" onclick="rateSelect(5)" onmouseover="rate(5)" id="star-5" style="margin-left: -7px !important">
+                        star_outline
+                    </i>
+                </p>
+            </div>
+        <div class="p-1 py-3 p-lg-3  d-none d-md-block mt-4 bg-primary bg-opacity-25  text-center rounded-3">
+            <p class="text-primary fs-5">GET 30% OFF</p>
+            <p >Share your referal code and get a discount!</p>
+            <a href="#" class="btn btn-primary text-white"> Share</a>
+        </div>
+        </div>
+    </div>
+</div>        <div class="col-md-9 mt-3 col-lg-10">
+            <div class="row m-auto align-items-center">
+                <div class="col-md-6">
+                    <p class="fs-4 mb-0">Adunni’s Closet</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-group flex-nowrap pt-3 pt-md-0">
+                        <span class="input-group-text" id="addon-wrapping"><i class="material-icons-outlined">
+                            search
+                        </i></span>
+                        <input type="text" name="instagram_handle" class="form-control  in_pd" placeholder="Search" aria-label="instagram_handle" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+            <div class="row m-auto align-items-top">
+                <div class="col-md-4 col-6 py-2 px-md-2 px-1 py-lg-3">
+                    <div class="bg-white rounded p-2 p-lg-4 me-lg-2">
+                        <div class="text-end mb-2 rounded p-3 min-height-lg min-height-md min-height-sm bg-cover" style="background: url(http://127.0.0.1:8000/images/trs_asset_09.png)">
+                            <input type="checkbox" name="item1" value="Bags" class="btn-check" id="item1_like" autocomplete="off">
+                            <label class="btn btn-outline-danger btn-sm bg-danger bg-opacity-25 border-0 like" for="item1_like">
+                                <i class="material-icons-outlined m-0 p-0">
+                                    favorite
+                                </i>
+                            </label>
+                        </div>
+                        <div class="text-center text-lg-start">
+                            <a href="http://127.0.0.1:8000/shop-link/Adunni%E2%80%99s%20Closet/myriakat" class="">
+                                <p class="fs-5 mb-1">Miyaki Luxury Gown</p>
+                                <p class="mb-1">
+                                                                                                                                        <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                        star
+                                    </i>
+                                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                        star
+                                    </i>
+                                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                        star
+                                    </i>
+                                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                        star_outline
+                                    </i>
+                                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                        star_outline
+                                    </i>
+                                                                                                        <span class="grey-text">(33)</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="row text-center text-lg-start align-items-center">
+                            <div class="col-lg-6">
+                                <p class="mb-lg-0 mb-1">
+                                    Price:
+                                    <span class="text-primary">₦35,000.00</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <button class="btn btn-primary white-text white-text-hover" onclick="addToCart()">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 py-2  px-md-2 px-1 py-lg-3">
+                    <div class="bg-white rounded p-2 p-lg-4 me-lg-2">
+                        <div class="text-end mb-2 rounded p-3 min-height-lg min-height-md min-height-sm bg-cover" style="background: url(http://127.0.0.1:8000/images/trs_asset_11.jpg)">
+                            <input type="checkbox" name="item1" value="Bags" class="btn-check" id="item2_like" autocomplete="off">
+                            <label class="btn btn-outline-danger btn-sm bg-danger bg-opacity-25 border-0 like" for="item2_like">
+                                <i class="material-icons-outlined m-0 p-0">
+                                    favorite
+                                </i>
+                            </label>
+                        </div>
+                        <div class="text-center text-lg-start">
+                            <p class="fs-5 mb-1">Miyaki Luxury Gown</p>
+                            <p class="mb-1">
+                                                                                                                        <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star_outline
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star_outline
+                                </i>
+                                                                                            <span class="grey-text">(33)</span>
+                            </p>
+                        </div>
+                        <div class="row text-center text-lg-start align-items-center">
+                            <div class="col-lg-6">
+                                <p class="mb-lg-0 mb-1">
+                                    Price:
+                                    <span class="text-primary">₦35,000.00</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <button class="btn btn-primary white-text white-text-hover" onclick="addToCart()">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 py-2 px-md-2 px-1 py-lg-3">
+                    <div class="bg-white rounded p-2 p-lg-4 me-lg-2">
+                        <div class="text-end mb-2 rounded p-3 min-height-lg min-height-md min-height-sm bg-cover" style="background: url(http://127.0.0.1:8000/images/trs_asset_10.png)">
+                            <input type="checkbox" name="item1" value="Bags" class="btn-check" id="item3_like" autocomplete="off">
+                            <label class="btn btn-outline-danger btn-sm bg-danger bg-opacity-25 border-0 like" for="item3_like">
+                                <i class="material-icons-outlined m-0 p-0">
+                                    favorite
+                                </i>
+                            </label>
+                        </div>
+                        <div  class="text-center text-lg-start">
+                            <p class="fs-5 mb-1">Miyaki Luxury Gown</p>
+                        <p class="mb-1">
+                                                                                                        <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                star
+                            </i>
+                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                star
+                            </i>
+                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                star
+                            </i>
+                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                star_outline
+                            </i>
+                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                star_outline
+                            </i>
+                                                                                <span class="grey-text">(33)</span>
+                        </p>
+                        </div>
+                        <div class="row text-center text-lg-start align-items-center">
+                            <div class="col-lg-6">
+                                <p class="mb-lg-0 mb-1">
+                                    Price:
+                                    <span class="text-primary">₦35,000.00</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <button class="btn btn-primary white-text white-text-hover" onclick="addToCart()">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-6 py-2 px-md-2 px-1 py-lg-3">
+                    <div class="bg-white rounded p-2 p-lg-4 me-lg-2">
+                        <div class="text-end mb-2 rounded p-3 min-height-lg min-height-sm min-height-md bg-cover" style="background: url(http://127.0.0.1:8000/images/trs_asset_13.png)">
+                            <input type="checkbox" name="item1" value="Bags" class="btn-check" id="item4_like" autocomplete="off">
+                            <label class="btn btn-outline-danger btn-sm bg-danger bg-opacity-25 border-0 like" for="item4_like">
+                                <i class="material-icons-outlined m-0 p-0">
+                                    favorite
+                                </i>
+                            </label>
+                        </div>
+                        <div class=" text-center text-lg-start ">
+                            <p class="fs-5 mb-1">Miyaki Luxury Gown</p>
+                            <p class="mb-1">
+                                                                                                                        <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star_outline
+                                </i>
+                                                                                                                            <i class="material-icons-outlined text-warning" style="margin-left: -7px !important">
+                                    star_outline
+                                </i>
+                                                                                            <span class="grey-text">(33)</span>
+                            </p>
+                        </div>
+                        <div class="row text-center text-lg-start align-items-center">
+                            <div class="col-lg-6">
+                                <p class="mb-lg-0 mb-1">
+                                    Price:
+                                    <span class="text-primary">₦35,000.00</span>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 text-lg-end">
+                                <button class="btn btn-primary white-text white-text-hover" onclick="addToCart()">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+const priceElement = document.getElementById("price");
+const priceInput = document.getElementById("priceRange")
+priceElement.innerHTML = "₦"+ priceInput.value;
+priceInput.oninput = function(){
+    priceElement.innerHTML = "₦"+ this.value
+}
+
+var rateClick = false
+var currentRate = 1;
+const rate = (x) =>{
+    for(let i = 1; i <= x; i++){
+        var element = document.getElementById("star-"+i)
+        element.innerHTML = "star";
+        element.classList.add("text-warning");
+    }
+}
+const rateOff = () =>{
+    for(let i = currentRate; i <= 5; i++){
+        var element = document.getElementById("star-"+i)
+        element.innerHTML = "star_outline";
+        element.classList.remove("text-warning");
+    }
+}
+const rateSelect = (x) =>{
+    for(let i = 1; i > (x+1); i++){
+        var element = document.getElementById("star-"+i)
+        element.innerHTML = "star";
+        element.classList.add("text-warning");
+    }
+    currentRate = x+1
+    rateOff()
+}
+
+var cartCounter = 0
+const addToCart = () =>{
+    var cartElement = document.getElementById("cartCount") 
+    cartCounter++;
+    cartElement.innerHTML = cartCounter;
+    cartElement.classList.remove("d-none");
+}
+
+
+</script>
+        </main>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

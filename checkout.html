@@ -1,0 +1,195 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="bQxYzj72tAVzJxnVwA0gFBhmjVtRz3N9m2LqKr5b">
+
+    <title>TRANSRETTA | Check Out Adunni’s Closet</title>
+
+    <!-- Fonts -->
+    <script src="https://kit.fontawesome.com/dfa2d8d82a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!-- Scripts -->
+        <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-24deb6b0.css" /><link rel="modulepreload" href="http://127.0.0.1:8000/build/assets/app-92006bb3.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-d67cbe2f.css" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-24deb6b0.css" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-92006bb3.js"></script></head>
+<body class="" style="background-color: #F7F9FB">
+    <div id="app">
+        <main>
+            <nav class="navbar sticky-top" style="background-color: #F7F9FB">
+    <div class="container-fluid px-4">
+        <a class="navbar-brand" href="/">
+          <img class="full-logo img-fluid d-none d-md-block" src="http://127.0.0.1:8000/images/trs_asset_02.png" style="max-width: 200px;">
+          <img class="icon-logo d-md-none" src="http://127.0.0.1:8000/images/trs_asset_03.png"  style="max-width: 30px;">
+        </a>
+        <div>
+            <button class="btn btn-primary-outline border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <i class="material-icons-outlined">
+                    shopping_cart
+                </i><sup id="cartCount" class="rounded-circle d-none" style="background: #f59137; color:white; padding: 0 3px;font-size: 10px; margin-left: -6px; vertical-align: super;"></sup>
+            </button>
+                        <a class="btn btn-primary text-primary bg-primary bg-opacity-25" href="/login" >Login <i class="material-icons-outlined">
+                login
+            </i></a>
+                    </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+        <p class="offcanvas-title fw-bolder fs-5"> Cart</p>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li>
+                <div class="row m-auto align-items-center">
+                    <div class="col-md-4 col-3 px-0">
+                        <div class="bg-cover rounded-2" style="background: url(http://127.0.0.1:8000/images/trs_asset_09.png); min-height:100px"></div>
+                    </div>
+                    <div class="col-md-5  col-6">
+                        <p class="mb-0">Miyaki Luxury Gown</p>
+                        <div class="input-group input-group-sm my-1">
+                            <span class="input-group-text">Quantity</span>
+                            <input type="number" value="1" class="form-control text-center" aria-label="quantity">
+                          </div>
+                        <button class="btn btn-link p-0 m-0 text-decoration-none">Remove</button>
+                    </div>
+                    <div class="col-md-3 col-3">
+                        <p class="text-primary">₦35,000.00</p>
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="offcanvas-footer bg-primary bg-opacity-25">
+            <div class="d-grid gap-2">
+                <a class="btn btn-primary  btn-lg rounded-0 text-white" href="/checkout" type="button">Check Out</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav><div class="container-fluid py-3">
+    <div class="row m-auto mt-4  align-items-center">
+        
+        <div class="col-md-3 col-lg-2 text-center d-none d-md-block">
+            <img src="http://127.0.0.1:8000/images/trs_asset_14.png" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-9 col-lg-9 bg-white">
+            <div class="row m-auto align-items-center">
+                <p class="fs-4 p-lg-4 rounded p-2">CheckOut</p>
+                <div class="row m-auto pt-0 pb-3 mb-3 align-items-center">
+                    <div class="col-lg-2 col-md-3 col-4 pb-2 py-md-0">
+                        <img src="http://127.0.0.1:8000/images/trs_asset_10.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-8">
+                        <p class="fs-4 fw-semibold mb-0 mb-md-1" >Miyaki Luxury Gown</p>
+                        <p class="grey-text mb-0 mb-md-1">Color: Light Blue</p>
+                        <p class="grey-text  mb-0 mb-md-1">Size: 8</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6  text-md-end">
+                        <div class="fs-5"> 
+                            <button class="btn btn-light  bg-transparent disabled"><i class="material-icons-outlined">add_circle_outline</i></button>
+                            <span id="quantity">1</span> 
+                            <button class="btn btn-link bg-transparent"><i class="material-icons-outlined">remove_circle_outline</i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-6  text-md-end">
+                        <span class="fs-5 fw-semibold text-end me-lg-3" >₦ 25,000.00</span>
+                        <button class="btn btn-outline-danger btn-sm mb-1"><i class="material-icons-outlined">delete_forever</i></button>
+                    </div>
+                </div>
+                <div class="row m-auto pt-0 pb-3 mb-3 align-items-center">
+                    <div class="col-lg-2 col-md-3 col-4 pb-2 py-md-0">
+                        <img src="http://127.0.0.1:8000/images/trs_asset_09.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-8">
+                        <p class="fs-4 fw-semibold mb-0 mb-md-1" >Miyaki Luxury Gown</p>
+                        <p class="grey-text mb-0 mb-md-1">Color: Light Blue</p>
+                        <p class="grey-text  mb-0 mb-md-1">Size: 8</p>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6  text-md-end">
+                        <div class="fs-5"> 
+                            <button class="btn btn-light  bg-transparent disabled"><i class="material-icons-outlined">add_circle_outline</i></button>
+                            <span id="quantity">1</span> 
+                            <button class="btn btn-link bg-transparent"><i class="material-icons-outlined">remove_circle_outline</i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-6  text-md-end">
+                        <span class="fs-5 fw-semibold me-lg-3" >₦ 25,000.00</span>
+                        <button class="btn btn-outline-danger btn-sm mb-1"><i class="material-icons-outlined">delete_forever</i></button>
+                    </div>
+                </div>
+                <div class="row m-auto mt-3 mb-3 border-top pt-3 align-items-center">
+                    <div class="col-md-12 text-md-end text-lg-start col-lg-3">
+                        <p class="fs-5 mb-md-0">
+                            Total amount : <span class="text-primary">₦70,000.00</span>
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <p class="fs-5 mb-md-0 grey-text">
+                            Taxes and shipping costs are calculated at checkout
+                        </p>
+                    </div>
+                    <div class="col-lg-3 text-lg-end col-md-6">
+                        <button type="button" class="btn btn-primary white-text">Back to Shop</button>
+                        <button type="button" class="btn btn-outline-primary white-text-hover">Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+const priceElement = document.getElementById("price");
+const priceInput = document.getElementById("priceRange")
+priceElement.innerHTML = "₦"+ priceInput.value;
+priceInput.oninput = function(){
+    priceElement.innerHTML = "₦"+ this.value
+}
+
+var rateClick = false
+var currentRate = 1;
+const rate = (x) =>{
+    for(let i = 1; i <= x; i++){
+        var element = document.getElementById("star-"+i)
+        element.innerHTML = "star";
+        element.classList.add("text-warning");
+    }
+}
+const rateOff = () =>{
+    for(let i = currentRate; i <= 5; i++){
+        var element = document.getElementById("star-"+i)
+        element.innerHTML = "star_outline";
+        element.classList.remove("text-warning");
+    }
+}
+const rateSelect = (x) =>{
+    for(let i = 1; i > (x+1); i++){
+        var element = document.getElementById("star-"+i)
+        element.innerHTML = "star";
+        element.classList.add("text-warning");
+    }
+    currentRate = x+1
+    rateOff()
+}
+
+var cartCounter = 0
+const addToCart = () =>{
+    var cartElement = document.getElementById("cartCount") 
+    cartCounter++;
+    cartElement.innerHTML = cartCounter;
+    cartElement.classList.remove("d-none");
+}
+</script>
+        </main>
+    </div>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

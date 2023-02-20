@@ -277,39 +277,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-
-    $(document).ready(function () {
-        $x = 0;
-        $('#sidebarCollapse').on('click', function () {
-            if ($x == 0) {
-                $('#backicon').text('unfold_more_double');
-                $x = 1;
-            }else{
-                $('#backicon').text('unfold_less_double')
-                $x = 0;
-            }
-            $('#sidebar').toggleClass('active');
-            $('#content').toggleClass('active');
-        });
-
-       $('#btn1').click(function () {
-          $('input').attr('disabled', 'disabled');
-       });
-       
-       $('#edit_profile').click(function () {
-          $('#p_details input').removeAttr('disabled');
-          $('#p_details select').removeAttr('disabled');
-          $('#edit_profile').attr('disabled', 'disabled');
-          $('#updateprofile').removeAttr('disabled');
-       });
-
-       $('#updateprofile').click(function () {
-          $('#p_details input').attr('disabled', 'disabled');
-          $('#p_details select').attr('disabled', 'disabled');
-          $('#edit_profile').removeAttr('disabled');
-          $('#updateprofile').attr('disabled', 'disabled');
-       });
-    });
     
 </script></body>
 </html>
